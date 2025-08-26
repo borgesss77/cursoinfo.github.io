@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="progl.css">
+  <title>Programação e Lógica</title>
+</head>
+<body>
+<nav>
+  <div class="logo">Curso de Informática</div>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <ul id="menu">
+     <li><a href="inicio.html">Início</a></li> 
+
+    <li class="dropdown">
+      <a href="#">1º Ano</a>
+      <ul class="dropdown-content">
+        <li><a href="#logica">Informatica basica</a></li>
+        <li><a href="#arquitetura">Logica de programacao</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">2º Ano</a>
+      <ul class="dropdown-content">
+        <li><a href="#java">P.O.O java</a></li>
+        <li><a href="index.html">Arquitetura & Sistemas Operacionais</a></li>
+        <li><a href="#redes">HTML & CSS</a></li>
+        <li><a href="">Programação web</a></li>
+        <li><a href="robotica.html">Robotica</a></li>
+        <li><a href="">Gestão do tempo</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">3º Ano</a>
+      <ul class="dropdown-content">
+        <li><a href="#robotica">Rede de computadores</a></li>
+        <li><a href="#seguranca">Design</a></li>
+        <li><a href="#projetos">Banco de dados</a></li>
+        <li><a href="">Programação web 2</a></li>
+        <li><a href="">Laboratorio de hardware</a></li>
+        <li><a href="">Laboratorio de Softwares</a></li>
+        <li><a href="">Laboratorio web</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  <h1>💻 Programação e Lógica</h1>
+  <main>
+    <section>
+      <h2>O que é Programação?</h2>
+      <p>
+        Programação é a arte de dar instruções ao computador para que ele execute tarefas.
+        Essas instruções são escritas em linguagens de programação como <strong>JavaScript, Python, C, Java</strong> e muitas outras.
+      </p>
+      <p>
+        Assim como damos ordens em nosso dia a dia (ex: "vá até a cozinha e pegue um copo de água"),
+        em programação usamos <strong>algoritmos</strong> para organizar passos lógicos que o computador deve seguir.
+      </p>
+    </section>
+
+ 
+    <section>
+      <h2>O que é Lógica de Programação?</h2>
+      <p>
+        Lógica de programação é a base do raciocínio usado para criar programas. Ela envolve:
+      </p>
+      <ul>
+        <li><strong>Sequência:</strong> Executar instruções em ordem.</li>
+        <li><strong>Decisão:</strong> Usar estruturas condicionais como <code>SE</code> e <code>SENÃO</code>.</li>
+        <li><strong>Repetição:</strong> Executar algo várias vezes com <code>laços de repetição</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplo em Pseudocódigo</h2>
+      <pre>
+Início
+  Leia idade
+  Se idade >= 18 então
+     Escreva "Você é maior de idade"
+  Senão
+     Escreva "Você é menor de idade"
+Fim
+      </pre>
+
+      <h2>Exemplo em JavaScript</h2>
+      <pre>
+let idade = 20;
+if (idade >= 18) {
+  console.log("Você é maior de idade");
+} else {
+  console.log("Você é menor de idade");
+}
+      </pre>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz-programacao" class="quiz">
+      <h2>🧠 Quiz de Programação e Lógica</h2>
+      <p>Responda às perguntas e veja sua pontuação no final!</p>
+
+      <div class="pergunta">
+        <p>1) O que é um algoritmo?</p>
+        <button onclick="responder(this, true)">Uma sequência de passos para resolver um problema</button>
+        <button onclick="responder(this, false)">Um código em Java ou Python</button>
+        <button onclick="responder(this, false)">Um programa já pronto</button>
+      </div>
+
+      <div class="pergunta">
+        <p>2) Qual a saída do seguinte código em JavaScript?<br>
+        <code>let x = 5;<br>let y = 2;<br>console.log(x + y);</code></p>
+        <button onclick="responder(this, false)">52</button>
+        <button onclick="responder(this, true)">7</button>
+        <button onclick="responder(this, false)">3</button>
+      </div>
+
+      <div class="pergunta">
+        <p>3) Em lógica de programação, a estrutura <code>SE...ENTÃO...SENÃO</code> serve para:</p>
+        <button onclick="responder(this, true)">Tomar decisões com base em condições</button>
+        <button onclick="responder(this, false)">Repetir um bloco de código várias vezes</button>
+        <button onclick="responder(this, false)">Criar variáveis</button>
+      </div>
+
+      <div class="pergunta">
+        <p>4) O que significa “variável” em programação?</p>
+        <button onclick="responder(this, false)">Um valor fixo que nunca muda</button>
+        <button onclick="responder(this, true)">Um espaço na memória que armazena valores</button>
+        <button onclick="responder(this, false)">Um comando para executar funções</button>
+      </div>
+
+      <div class="pergunta">
+        <p>5) Qual das opções representa um <strong>laço de repetição</strong>?</p>
+        <button onclick="responder(this, false)">if (condição) {...}</button>
+        <button onclick="responder(this, true)">while (condição) {...}</button>
+        <button onclick="responder(this, false)">let numero = 10;</button>
+      </div>
+
+      <p id="resultado"></p>
+    </section>
+  </main>
+
+<script src="progl.js"></script>
+</body>
+</html>
