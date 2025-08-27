@@ -1,4 +1,4 @@
-    body {
+body {
       font-family: Arial, sans-serif;
       background: #0f172a;
       color: #e2e8f0;
@@ -63,50 +63,55 @@ h2 img.icon {
       font-family: monospace;
     }
 
-    pre {
-      background: #111827;
-      color: #00ffae;
-      padding: 15px;
-      border-radius: 8px;
-      overflow-x: auto;
-    }
-
-    .quiz {
-      text-align: center;
-    }
-
-    .pergunta {
-      margin-bottom: 25px;
-      padding: 15px;
-      border-radius: 10px;
-      background: #111827;
-      box-shadow: inset 0px 0px 8px rgba(0, 212, 255, 0.2);
-    }
-
-    .pergunta button {
-      margin: 5px;
-      padding: 10px 15px;
+    .options button {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       background: #00d4ff;
-      color: black;
+      color: #000;
       font-weight: bold;
       cursor: pointer;
       transition: 0.3s;
     }
 
-    .pergunta button:hover {
-      background: #009ec3;
-      transform: scale(1.05);
+    .options button:hover {
+      background: #00a0c8;
+      color: #fff;
     }
 
-    #resultado {
-      margin-top: 20px;
-      font-size: 1.3rem;
-      font-weight: bold;
-      color: #00ffae;
+    .correct {
+      background: #22c55e !important;
+      color: white;
     }
-nav {
+
+    .wrong {
+      background: #ef4444 !important;
+      color: white;
+    }
+
+    #next-btn {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background: #9333ea;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      display: none;
+    }
+
+    #result {
+      font-size: 20px;
+      margin-top: 20px;
+      display: none;
+    }
+
+    nav {
   background: #161b22;
   padding: 15px 30px;
   display: flex;

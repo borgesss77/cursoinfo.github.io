@@ -95,12 +95,11 @@ function showArqResult(){
 
 loadArqQuestion();
 
-<script>
+
   const menuToggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("menu");
   const dropdowns = document.querySelectorAll(".dropdown");
 
-  // abre/fecha o menu no mobile
   menuToggle.addEventListener("click", () => {
     menu.classList.toggle("show");
     menu.style.display = menu.classList.contains("show") ? "flex" : "none";
@@ -112,4 +111,4 @@ loadArqQuestion();
       dropdown.classList.toggle("active");
     });
   });
-</script>
+

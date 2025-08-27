@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="logicap.css">
+  <title>Programação e Lógica</title>
+</head>
+<body>
+<nav>
+  <div class="logo">Curso de Informática</div>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <ul id="menu">
+     <li><a href="/inicio/inicio.html">Início</a></li> 
+
+    <li class="dropdown">
+      <a href="#">1º Ano</a>
+      <ul class="dropdown-content">
+        <li><a href="/infobasic/infobasic.html">Informatica basica</a></li>
+        <li><a href="/logica1/logicap.html">Logica de programacao</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">2º Ano</a>
+      <ul class="dropdown-content">
+        <li><a href="#java">P.O.O java</a></li>
+        <li><a href="/arqso/as.html">Arquitetura & Sistemas Operacionais</a></li>
+        <li><a href="#redes">HTML & CSS</a></li>
+        <li><a href="/progweb/progl.html">Programação web</a></li>
+        <li><a href="robotica.html">Robotica</a></li>
+        <li><a href="">Gestão do tempo</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">3º Ano</a>
+      <ul class="dropdown-content">
+        <li><a href="#robotica">Rede de computadores</a></li>
+        <li><a href="#seguranca">Design</a></li>
+        <li><a href="#projetos">Banco de dados</a></li>
+        <li><a href="">Programação web 2</a></li>
+        <li><a href="">Laboratorio de hardware</a></li>
+        <li><a href="">Laboratorio de Softwares</a></li>
+        <li><a href="">Laboratorio web</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  <h1> Oque é Logica de Programação🧠</h1>
+  <main>
+   
+    <section>
+      <h2>Java Script</h2>
+      <p>
+        Lógica de programação é a base do raciocínio usado para criar programas. Ela envolve:
+      </p>
+      <ul>
+        <li><strong>Sequência:</strong> Executar instruções em ordem.</li>
+        <li><strong>Decisão:</strong> Usar estruturas condicionais como <code>SE</code> e <code>SENÃO</code>.</li>
+        <li><strong>Repetição:</strong> Executar algo várias vezes com <code>laços de repetição</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplo em Pseudocódigo</h2>
+      <pre>
+Início
+  Leia idade
+  Se idade >= 18 então
+     Escreva "Você é maior de idade"
+  Senão
+     Escreva "Você é menor de idade"
+Fim
+      </pre>
+
+      <h2>Exemplo em JavaScript</h2>
+      <pre>
+let idade = 20;
+if (idade >= 18) {
+  console.log("Você é maior de idade");
+} else {
+  console.log("Você é menor de idade");
+}
+      </pre>
+    </section>
+
+    <div class="quiz-container">
+    <h1>Quiz de Lógica</h1>
+    <div id="quiz">
+      <div id="question" class="question"></div>
+      <div id="options" class="options"></div>
+      <button id="next-btn">Próxima</button>
+      <div id="result"></div>
+    </div>
+  </main>
+
+<script src="logicap.js"></script>
+</body>
+</html>
